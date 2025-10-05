@@ -1,2 +1,2 @@
 #!/bin/bash
-POWER=144 DIVIDE=12 expr $POWER / $DIVIDE
+expr $POWER / $DIVIDE
