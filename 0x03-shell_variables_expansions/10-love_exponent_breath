@@ -1,2 +1,2 @@
 #!/bin/bash
-expr $BREATH \** $LOVE
+echo $((2#$BREATH ** 2#$LOVE))
