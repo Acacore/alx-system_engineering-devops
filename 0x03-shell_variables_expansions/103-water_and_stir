@@ -1,2 +1,2 @@
 #!/bin/bash
-tr '0123456789' 'bestchol' <<< "$(( ${$(tr 'water' '01234' <<< "$WATER")//.} + ${$(tr 'stir' '0123' <<< "$STIR")//.} ))"
+echo $(tr 012345678 bestchol <<< $(( $(tr -d . <<< $(tr water 01234 <<< $WATER)) + $(tr -d . <<< $(tr stir 01234 <<< $STIR)) )))
