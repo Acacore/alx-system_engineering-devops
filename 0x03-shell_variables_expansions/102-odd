@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1v
+awk 'NR%2==1' ${1:-/dev/stdin}
