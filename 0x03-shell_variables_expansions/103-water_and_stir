@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((2#"$WATER" + 2#"$STIR")) | awk '{printf "%x\n",$1}'
+printf %s "$(( $(echo $WATER | tr 'water' '01234') + $(echo $STIR | tr 'stir' '012') ))" | awk '{...}'
