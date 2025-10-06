@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(tr 012345678 bestchol <<< $(( $(tr -d . <<< $(tr water 01234 <<< $WATER)) + $(tr -d . <<< $(tr stir 01234 <<< $STIR)) )))
+echo $(tr 01234567 bestchol <<< $(printf '%o' $((5#$(tr water 01234 <<< $WATER) + 5#$(tr stir. 01234 <<< $STIR)))))
